@@ -164,10 +164,10 @@
 
 #1
 
-\vspace{1em}
+\vspace{0.5em}
 }
 \vfill	
-\begin{minipage}[t][0.25\textheight][b]{\textwidth}
+\begin{minipage}[t][0.2\textheight][b]{\textwidth}
 #2
 \end{minipage}
 }
