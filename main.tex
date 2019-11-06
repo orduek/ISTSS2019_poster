@@ -119,28 +119,29 @@ download the full poster
 
 \section{Method}
 \begin{itemize}
-\item Two groups from DoD/VA administrative dataset
-\item Medicated group (N=13,913)
-\item Unmedicated group (N= 10,553)
-\item Groups were compared in their network structure and centrality of nodes
+\item Administrative data collected from DoD/VA
+\item Analyzed only PTSD network (PCL-4)
+\item Analyzed PTSD and Depression network (PCL-4 \& PHQ9)
+\item Ran directed acyclic graph (DAG) 
 \end{itemize}
 
 
 \section{Results}
 \begin{itemize}
-    \item Higher centrality for sleep and concentration symptoms
-    \item Anhedonia more central in unmedicated group
+    \item Only PTSD $\rightarrow$ higher centrality for trauma related symptoms
+    \item PTSD and depression $\rightarrow$ Higher centrality for sleep \& concentration symptoms
+    \item DAG $\rightarrow$ Intrusion is most pivotal
 \end{itemize}
 
 \begin{center}
-    \includegraphics[width=0.95\textwidth]{img/centrality_medUnmed.eps}
+    \includegraphics[width=0.99\textwidth]{img/centralityTotal.eps}
 \end{center}
 
 \section{Conclusion}
 \begin{itemize}
     \item Comorbidity should be taken into account
     \item Sleep and concentration are highly central in PTSD with comorbid depression
-    \item Might affect our clinical intervention in future
+    \item Might affect our clinical intervention in future 
 \end{itemize}
 
 %% This fills the space between the content and the logo
@@ -157,30 +158,45 @@ download the full poster
 
 \section{supplementary material}
 \section{Network Graphs}
+
+Graph pertaining the partial correlation (LASSO) between PCL alone or PCL and PHQ9 symptoms \\
+(five clusters according to $^{(Harpaz-Rotem et al. 2014)}$ \\
+Stronger correlations are presented using higher saturation and wider lines
 \begin{center}
 % Commutative diagram with edges passing under/over
 % Author: Stefan Kottwitz, http://texblog.net/
 % Retrieved from: http://www.texample.net/tikz/examples/commutative-diagram/
-Medicated network
-\includegraphics[width=\textwidth]{img/medicated_network.eps}
+\textbf{PTSD symptoms}
+\includegraphics[width=\textwidth]{img/pclOnlyNetwork.eps}
+\end{center}
 \\
-Unmedicated network
-\includegraphics[width=\textwidth]{img/unmedicated_network.eps}
+
+\\
+\begin{center}
+\textbf{PTSD \& Depressive symptoms}
+\includegraphics[width=\textwidth]{img/PCL_PHQ9Network.eps}
 \end{center}
 
-\section{More info}
-\begin{itemize}
-    \item Data was analyzed using R packages bootnet $^{(Epskamp \& Fried, 2018)}$
-    \item As datasets are large, stability of the network is very high
-    \item Network analysis is a new approach to understand symptomatology
-    \item It can be used to eventually generate new understandings and better interventions
-\end{itemize}
+\section{DAG}
+\begin{center}
+Directed acyclic graph reveals intrusion symptoms as most pivotal
+    \includegraphics[width=\textwidth]{img/pcl_DAG.eps}
+\end{center}
+%\section{Difference}
+%\begin{center}
+%This is a graph example of difference between the two networks. Depression symptoms explain 6.3\% of connectivity
+%    \includegraphics[width=\textwidth]{img/deltaNetworks.eps}
+%\end{center}
+
+\\
+Data was analyzed using R packages: \\
+bootnet $^{(Epskamp \& Fried, 2018)}$ \\
+bnlearn $^{(Scutari, 2009)}$
 
 \vfill
-\begin{flushright}
-    
 
-    
+\begin{flushright}
+
 \includegraphics[width=0.5\textwidth]{img/NCPTSD_Logo.png}
 \hfill
 \includegraphics[width=0.4\textwidth]{img/Yale.png}
