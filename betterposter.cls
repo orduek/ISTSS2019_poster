@@ -74,9 +74,9 @@
 
 \newcommand{\fontsizestandard}{\fontsize{32.00}{50.50} \selectfont}
 \newcommand{\fontsizemain}{\fontsize{116.00}{220.00} \selectfont}
-\newcommand{\fontsizetitle}{\fontsize{80.00}{120.00} \selectfont}
-\newcommand{\fontsizeauthor}{\fontsize{48.00}{68.00} \selectfont}
-\newcommand{\fontsizesection}{\fontsize{48.00}{68.00} \selectfont}
+\newcommand{\fontsizetitle}{\fontsize{75.00}{110.00} \selectfont}
+\newcommand{\fontsizeauthor}{\fontsize{40}{60} \selectfont}
+\newcommand{\fontsizesection}{\fontsize{45.00}{65.00} \selectfont}
 
 \DeclareOption{a2paper}{
 \geometry{a2paper}
@@ -92,7 +92,7 @@
 \renewcommand{\fontsizestandard}{\fontsize{22.63}{35.36} \selectfont}
 \renewcommand{\fontsizemain}{\fontsize{82.02}{155.56} \selectfont}
 \renewcommand{\fontsizetitle}{\fontsize{56.57}{70.71} \selectfont}
-\renewcommand{\fontsizeauthor}{\fontsize{33.94}{48.08} \selectfont}
+\renewcommand{\fontsizeauthor}{\fontsize{30}{40} \selectfont}
 \renewcommand{\fontsizesection}{\fontsize{33.94}{48.08} \selectfont}
 }
 
@@ -198,7 +198,7 @@
 %% Section command
 \renewcommand{\section}[1]{
 
-\vspace{1em}{\fontsizesection\selectfont
+\vspace{0.5em}{\fontsizesection\selectfont
 \textbf{\leavevmode
 #1
 }}\\[-1em]

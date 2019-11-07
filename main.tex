@@ -66,7 +66,8 @@
 \maincolumn{
 %%%% Main space
 \begin{flushleft}
-Higher centrality for \textbf{concentration} and \textbf{sleep} symptoms when \textbf{depression} in PTSD is accounted.
+\textbf{Concentration} and \textbf{sleep} are more central when depression in PTSD is accounted for.
+%Higher centrality of \textbf{concentration} and \textbf{sleep} symptoms when \textbf{depression} in PTSD is accounted.
 \end{flushleft}
 
 
@@ -104,66 +105,66 @@ download the full poster
 }{
 %%%%%%%% LEFT COLUMN
 
-\title{Concentration and Sleep in PTSD}
+\title{Concentration and \\ Sleep in PTSD}
 \author{Duek, Or}
 \author{Hoff, Ranni}
 \author{Harpaz-Rotem Ilan}
-\\
+
 \institution{Yale University School of Medicine}
 \institution{National Center for PTSD}
 
 \section{Introduction}
 \begin{itemize}
-\item PTSD symptomatology is still debatable
-\item Past network approach studies used small/medium sample size
-\item Most studies assessed PTSD symptoms alone
-\item PTSD highly comorbid with depression
+\item Importance of core symptoms in PTSD is still debatable
+\item Past network-approach studies used small/medium sample size
+\item More emphasis on\\ comorbidity in PTSD, especially depression
+\item Network-approach $\rightarrow$ understand relations between different symptoms
 \end{itemize}
 
 \section{Method}
 \begin{itemize}
-\item Administrative data collected from DoD/VA
-\item Analyzed only PTSD network (PCL-4)
-\item Analyzed PTSD and Depression network (PCL-4 \& PHQ9)
-\item Ran directed acyclic graph (DAG) 
+\item Data collected from DoD/VA
+\item Analyzed only PTSD symptoms [PCL-4,(N=159,577)]
+\item Analyzed PTSD with Depression symptoms [PCL-4\&PHQ9, (N=33,088)]
+\item Used directed acyclic graph (DAG) to find \\directionality in the network
 \end{itemize}
 
 
 \section{Results}
 \begin{itemize}
-    \item Only PTSD $\rightarrow$ higher centrality for trauma related symptoms
-    \item PTSD and depression $\rightarrow$ Higher centrality for sleep \& concentration symptoms
-    \item DAG $\rightarrow$ Intrusion is most pivotal
+    \item Only PTSD $\rightarrow$ higher centrality of trauma\\ related symptoms
+    \item PTSD with depression $\rightarrow$ Higher centrality of sleep \& concentration symptoms
+    \item DAG $\rightarrow$ Intrusion stand as the cause
 \end{itemize}
 
 \begin{center}
-    \includegraphics[width=0.99\textwidth]{img/centralityTotal.eps}
+\textbf{Centrality of PTSD alone \& PTSD and Depression}
+    \includegraphics[width=0.99\textwidth, height=0.7\textwidth]{img/centralityTotal.eps}
 \end{center}
 
 \section{Conclusion}
 \begin{itemize}
-    \item Comorbidity should be taken into account
-    \item Sleep and concentration are highly central in PTSD with comorbid depression
-    \item Might affect our clinical intervention in future 
+    \item Sleep and concentration are very important in PTSD with comorbid depression
+    \item Might affect our clinical intervention in the future (more focus on sleep \& concentration)
 \end{itemize}
 
 %% This fills the space between the content and the logo
 \vfill
 
 %% Institution logo
-\begin{center}
+% \begin{center}
 
 
-\includegraphics[width=0.3\textwidth]{img/yalesm.png}\\
-\end{center}
+% \includegraphics[width=0.3\textwidth]{img/yalesm.png}\\
+% \end{center}
 }{
 %%%%%%%% RIGHT COLUMN
 
-\section{supplementary material}
+\section{}
 \section{Network Graphs}
 
-Graph pertaining the partial correlation (LASSO) between PCL alone or PCL and PHQ9 symptoms \\
-(five clusters according to $^{(Harpaz-Rotem et al. 2014)}$ \\
+Graph describes the partial correlation (LASSO) between PCL alone (1$^{st}$) or PCL and PHQ9 (2$^{nd}$) symptoms
+(five clusters\\ according to $^{(Harpaz-Rotem \ et al. 2014)}$ \\ % fix space here
 Stronger correlations are presented using higher saturation and wider lines
 \begin{center}
 % Commutative diagram with edges passing under/over
@@ -183,7 +184,14 @@ Stronger correlations are presented using higher saturation and wider lines
 \section{DAG}
 \begin{center}
 Directed acyclic graph reveals intrusion symptoms as most pivotal
+\begin{SCfigure}
+    \centering
     \includegraphics[width=\textwidth]{img/pcl_DAG.eps}
+    %\caption{Figure present directionality of symptom's correlation}
+    \label{fig:my_label}
+\end{SCfigure}
+    %\includegraphics
+    %\caption{[width=0.5\textwidth]}
 \end{center}
 %\section{Difference}
 %\begin{center}
@@ -204,6 +212,7 @@ bnlearn $^{(Scutari, 2009)}$
 \hfill
 \includegraphics[width=0.4\textwidth]{img/Yale.png}
 \end{flushright}
+
 }
 
 \end{document}
