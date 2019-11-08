@@ -74,7 +74,7 @@
 \null
 %\vfill
 \begin{center}
-\includegraphics[scale=1.5]{img/opaqueNetwork.png}    
+\includegraphics[scale=1.5]{img/centerFigure.png}    
 \end{center}
 
 }{
@@ -124,7 +124,7 @@ download the full poster
 
 \section{Method}
 \begin{itemize}
-\item Data collected from DoD/VA
+\item Data collected from DoD/VA (administrative records)
 \item Analyzed only PTSD symptoms [PCL-4,(N=159,577)]
 \item Analyzed PTSD with Depression symptoms [PCL-4\&PHQ9, (N=33,088)]
 \item Used directed acyclic graph (DAG) to find \\directionality in the network
@@ -161,7 +161,7 @@ download the full poster
 }{
 %%%%%%%% RIGHT COLUMN
 
-\section{}
+
 \section{Network Graphs}
 
 Graph describes the partial correlation (LASSO) between PCL alone (1$^{st}$) or PCL and PHQ9 (2$^{nd}$) symptoms
@@ -172,14 +172,14 @@ Stronger correlations are presented using higher saturation and wider lines
 % Author: Stefan Kottwitz, http://texblog.net/
 % Retrieved from: http://www.texample.net/tikz/examples/commutative-diagram/
 \textbf{PTSD symptoms}
-\includegraphics[width=\textwidth]{img/pclOnlyNetwork.eps}
+\includegraphics[width=0.8\textwidth]{img/pclOnlyNetwrork.eps}
 \end{center}
 \\
 
 \\
 \begin{center}
 \textbf{PTSD \& Depressive symptoms}
-\includegraphics[width=\textwidth]{img/PCL_PHQ9Network.eps}
+\includegraphics[width=0.8\textwidth]{img/pclPHQ9_network.eps}
 \end{center}
 
 \section{DAG}
@@ -187,7 +187,7 @@ Stronger correlations are presented using higher saturation and wider lines
 Directed acyclic graph reveals intrusive thoughts as most pivotal
 \begin{SCfigure}
     \centering
-    \includegraphics[width=\textwidth, height=1.05\textwidth]{img/pcl_DAG.eps}
+    \includegraphics[width=\textwidth, height=0.8\textwidth]{img/pcl_DAG.eps}
     %\caption{Figure present directionality of symptom's correlation}
     \label{fig:my_label}
 \end{SCfigure}
@@ -200,18 +200,27 @@ Directed acyclic graph reveals intrusive thoughts as most pivotal
 %    \includegraphics[width=\textwidth]{img/deltaNetworks.eps}
 %\end{center}
 
+\section{Sample Characteristics}
+\begin{center}
+\begin{tabular}{c c c}
+  & Mean(\pm{SD}) & Range \\ 
+ Age & 41.1(\pm{15.1}) & 18-94 \\  
+ PCL-4 & 57.75 (\pm{13.8}) & 17-85 \\
+ PHQ9 & 14.5 (\pm{6.27}) & 0-27 \\
+\end{tabular}
 \\
+\null
+Females were 5\% in the only PTSD sample and 8\% in PTSD with depression
+\end{center}
 Data was analyzed using R packages: \\
 bootnet $^{(Epskamp \& Fried,\ 2018)}$ \\
 bnlearn $^{(Scutari,\ 2009)}$
-
-\vfill
+%\vfill
 
 \begin{flushright}
-
-\includegraphics[width=0.5\textwidth]{img/NCPTSD_Logo.png}
+\includegraphics[width=0.4\textwidth]{img/NCPTSD_Logo.png}
 \hfill
-\includegraphics[width=0.4\textwidth]{img/Yale.png}
+\includegraphics[width=0.3\textwidth]{img/Yale.png}
 \end{flushright}
 
 }
