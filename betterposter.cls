@@ -23,7 +23,7 @@
 \geometry{landscape}
 
 %% Remove default margins
-\geometry{margin=0in}
+\geometry{margin=0.1in}
 
 %% Font
 \RequirePackage{cmbright}
@@ -75,8 +75,8 @@
 \newcommand{\fontsizestandard}{\fontsize{32.00}{50.50} \selectfont}
 \newcommand{\fontsizemain}{\fontsize{116.00}{220.00} \selectfont}
 \newcommand{\fontsizetitle}{\fontsize{75.00}{110.00} \selectfont}
-\newcommand{\fontsizeauthor}{\fontsize{40}{60} \selectfont}
-\newcommand{\fontsizesection}{\fontsize{45.00}{65.00} \selectfont}
+\newcommand{\fontsizeauthor}{\fontsize{35}{40} \selectfont}
+\newcommand{\fontsizesection}{\fontsize{42.00}{60.00} \selectfont}
 
 \DeclareOption{a2paper}{
 \geometry{a2paper}
